@@ -1,0 +1,159 @@
+.u-section-1 {
+  min-height: 1010px;
+}
+
+.u-section-1 .u-map-1 {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.u-section-1 .u-group-1 {
+  background-image: none;
+  width: 720px;
+  height: auto;
+  min-height: 132px;
+  margin: 50px calc(((100% - 1140px) / 2)) 0 auto;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1.125rem;
+  margin: 0 19px;
+}
+
+.u-section-1 .u-group-2 {
+  background-image: none;
+  height: auto;
+  min-height: 377px;
+  width: 500px;
+  margin: 49px auto 60px calc(((100% - 1140px) / 2));
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 12px 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 700;
+  width: 302px;
+  margin: 4px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 313px;
+  width: 456px;
+  margin: 9px auto 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-map-1 {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 135px;
+    margin-top: 121px;
+    margin-right: calc(((100% - 940px) / 2));
+    height: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 3px;
+  }
+
+  .u-section-1 .u-group-2 {
+    margin-top: 29px;
+    margin-left: calc(((100% - 940px) / 2));
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-group-1 {
+    margin-right: calc(((100% - 720px) / 2));
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .u-section-1 .u-group-2 {
+    margin-left: calc(((100% - 720px) / 2));
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-group-1 {
+    width: 540px;
+    margin-right: calc(((100% - 540px) / 2));
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .u-section-1 .u-group-2 {
+    margin-left: calc(((100% - 540px) / 2));
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-group-1 {
+    min-height: 225px;
+    width: 340px;
+    margin-top: 110px;
+    margin-right: calc(((100% - 340px) / 2));
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 4px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-group-2 {
+    width: 340px;
+    margin-top: 26px;
+    margin-left: auto;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+}
+
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
