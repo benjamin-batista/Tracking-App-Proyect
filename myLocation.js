@@ -6,13 +6,6 @@ function Locations(){
   getLocation();
 }
 
-// function loadLocations () { // We need to wrap the loop into an async function for this to work
-//     for (let i = 0; i < stations.length; i++) {
-//       const stat = stations[i];
-//       addMarkerStations({ lat: stat[1], lng: stat[2] })
-//     }
-//   }
-
 function getLocation(){
     if(navigator.geolocation){
         geoLoc = navigator.geolocation;
