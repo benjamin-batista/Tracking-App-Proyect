@@ -10,16 +10,27 @@ function Stations(){
 function loadStations () { // We need to wrap the loop into an async function for this to work
     for (let i = 0; i < stations.length; i++) {
       const stat = stations[i];
-      addMarkerStations({ lat: stat[1], lng: stat[2] }, stat[0])
+      const imagess= {
+        url: "./images/station.png",
+        // This marker is 20 pixels wide by 32 pixels high.
+        // size: new google.maps.Size(20, 32),
+        scaledSize: new google.maps.Size(30, 30),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(0, 32),
+      };
+      addMarkerStations({ lat: stat[1], lng: stat[2] }, stat[0],imagess)
     }
   }
 
 // Adds a marker to the map and push to the array.
-function addMarkerStations(locationStations, name) {
+function addMarkerStations(locationStations, name, images) {
   const stations = new google.maps.Marker({
     position: locationStations,
     map: map,
     title: name,
+    icon: images,
   });
   console.log(stations)
   markersStations.push(stations);
